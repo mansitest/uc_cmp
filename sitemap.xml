@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 	<sitemap>
-		<loc>https://www.fti.de/blog/sitemap.xml</loc>
+		<loc>https://www.5vorflug.de/googlesitemap.xml</loc>
 		<lastmod>2020-09-02T10:42:46+00:00</lastmod>
 	</sitemap>
 	<sitemap>
-		<loc>https://www.fti.de/?id=32</loc>
+		<loc>https://www.5vorflug.de/googlesitemap-hotels/sitemap/1.xml</loc>
 		<lastmod>2020-10-30T15:31:20+00:00</lastmod>
 	</sitemap>
     <sitemap>
-		<loc>https://www.fti.de/xml-sitemap-hotels/sitemap/1.xml</loc>
+		<loc>https://www.5vorflug.de/blog/sitemap.xml</loc>
 		<lastmod>2020-10-30T15:31:20+00:00</lastmod>
 	</sitemap>
 </sitemapindex>
