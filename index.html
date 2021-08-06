@@ -3,14 +3,13 @@
   <head>
     <meta charset="UTF-8">
     <title>CMP Test</title>
-    <!--<script id="usercentrics-cmp" data-settings-id="nnr1JvSE9" src="https://app.usercentrics.eu/browser-ui/latest/bundle.js" defer></script>-->
-    <link rel="preconnect" href="//app.usercentrics.eu">
+    <!--<link rel="preconnect" href="//app.usercentrics.eu">
     <link rel="preconnect" href="//api.usercentrics.eu">
     <link rel="preconnect" href="//privacy-proxy.usercentrics.eu">
     <link rel="preload" href="//app.usercentrics.eu/browser-ui/latest/loader.js" as="script">
-    <link rel="preload" href="//privacy-proxy.usercentrics.eu/latest/uc-block.bundle.js" as="script">
+    <link rel="preload" href="//privacy-proxy.usercentrics.eu/latest/uc-block.bundle.js" as="script">-->
     <script id="usercentrics-cmp" src="https://app.usercentrics.eu/browser-ui/latest/loader.js" data-settings-id="nnr1JvSE9" async></script>
-    <script type="application/javascript" src="https://privacy-proxy.usercentrics.eu/latest/uc-block.bundle.js"></script>
+    <!--<script type="application/javascript" src="https://privacy-proxy.usercentrics.eu/latest/uc-block.bundle.js"></script>-->
 
     <!-- Google Tag Manager -->
       <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
@@ -28,6 +27,18 @@
     
     <script>
       window.addEventListener('ucEvents', function (e) { console.log(e); })
+      window.addEventListener("ucEvent", function (e) {    
+    if( e.detail && e.detail.event == "consent_status") {
+        // check for consent status of service "Google Tag Manager"
+        if(e.detail['Google Tag Manager'] === true) {
+          console.log('Google Tag Manager');
+        }
+        else {
+          console.log('Google Tag Manager has no consent');
+          }
+        }
+    });
+
     </script>
 
   </head>
