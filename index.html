@@ -29,12 +29,12 @@
       window.addEventListener('ucEvents', function (e) { console.log(e); })
       window.addEventListener("ucEvent", function (e) {    
     if( e.detail && e.detail.event == "consent_status") {
-        // check for consent status of service "Google Tag Manager"
-        if(e.detail['Google Tag Manager'] === true) {
-          console.log('Google Tag Manager has consent');
+        // check for consent status of service "Google Analytics"
+        if(e.detail['Google Analytics'] === true) {
+          console.log('Google Analytics has consent');
         }
         else {
-          console.log('Google Tag Manager has no consent');
+          console.log('Google Analytics has no consent');
           }
         }
     });
