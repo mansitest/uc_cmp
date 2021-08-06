@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8">
-    <title>Data Layer Test</title>
+    <title>CMP Test</title>
     <!--<script id="usercentrics-cmp" data-settings-id="nnr1JvSE9" src="https://app.usercentrics.eu/browser-ui/latest/bundle.js" defer></script>-->
     <link rel="preconnect" href="//app.usercentrics.eu">
     <link rel="preconnect" href="//api.usercentrics.eu">
@@ -25,6 +25,10 @@
     <link rel="icon" type="image/png" sizes="32x32" href="/uc_cmp/ico/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/uc_cmp/ico/favicon-16x16.png">
     <link rel="manifest" href="/uc_cmp/ico/site.webmanifest">
+    
+    <script>
+      window.addEventListener('ucEvents', function (e) { console.log(e); })
+    </script>
 
   </head>
 
